@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Book a Fix · Th3Foundry PC Repair</title><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Book a Fix · TheMaktechoForge</title><style>
 :root{--pink:#ff2a6d;--cyan:#05d9e8;--gold:#f9c80e;--bg:#0d0221;--panel:#1a0b33}
 *{box-sizing:border-box}body{margin:0;font-family:"Courier New",Consolas,monospace;color:#f0e6ff;background:var(--bg);line-height:1.5}
 a{color:var(--cyan)}
@@ -20,7 +20,7 @@ details{background:var(--panel);border-left:4px solid var(--pink);margin:10px 0;
 
 .wrap{max-width:640px;margin:auto;padding:24px 16px}h1{font-size:clamp(28px,7vw,46px);text-align:center}#sum{display:none;background:var(--panel);border:2px solid var(--gold);padding:16px;white-space:pre-wrap;margin-top:18px}
 @media print{body{background:#fff;color:#000}.f,.noprint,h1{display:none!important}#sum{display:block!important;border:2px solid #000;color:#000;background:#fff;font-size:14pt}}</style></head><body><div class="wrap">
-<h1>BOOK A FIX</h1><p class="tag" style="text-align:center">&gt; Th3Foundry PC Repair · Macomb &amp; WIU · 817-614-5220</p>
+<h1>BOOK A FIX</h1><p class="tag" style="text-align:center">&gt; TheMaktechoForge · Macomb &amp; WIU · 817-614-5220</p>
 <form class="f" onsubmit="return false">
 <label>Name<input id="n"></label><label>Phone<input id="ph" type="tel"></label><label>Email<input id="em" type="email"></label>
 <label>Service<select id="s"><option>Diagnostic (free for WIU)</option><option>Tune-up / speed-up</option><option>Virus &amp; malware removal</option><option>Windows reinstall + backup</option><option>SSD / RAM upgrade</option><option>Custom PC build</option><option>AI tools setup</option><option>Something else</option></select></label>
@@ -35,7 +35,7 @@ details{background:var(--panel);border-left:4px solid var(--pink);margin:10px 0;
 <div class="row"><button class="btn" onclick="go('sms')">SEND BY TEXT</button><button class="btn alt" onclick="go('mail')">SEND BY EMAIL</button><button class="btn" style="background:#fff" onclick="pr()">PRINT SUMMARY</button></div></form>
 <div id="sum"></div><p class="note noprint">Nothing is stored online. Sending opens your text or email app with everything filled in.</p></div>
 <script>const v=i=>document.getElementById(i).value,c=i=>document.getElementById(i).checked?'yes':'no';
-function msg(){return `TH3FOUNDRY PC REPAIR - BOOKING REQUEST\nDate: ${new Date().toLocaleString()}\nName: ${v('n')}\nPhone: ${v('ph')}\nEmail: ${v('em')}\nService: ${v('s')}\nDevice: ${v('dt')} - ${v('d')} (${v('os')})\nProblem: ${v('p')}\nWhen: ${v('t')}\nWhere: ${v('wh')}\nWIU student: ${c('w')}\nBackup first: ${c('bu')}\nAgreed no-fix-no-fee terms: ${c('ok')}\n\nContact: 817-614-5220 · tremfjones3@gmail.com`}
+function msg(){return `THEMAKTECHOFORGE - BOOKING REQUEST\nDate: ${new Date().toLocaleString()}\nName: ${v('n')}\nPhone: ${v('ph')}\nEmail: ${v('em')}\nService: ${v('s')}\nDevice: ${v('dt')} - ${v('d')} (${v('os')})\nProblem: ${v('p')}\nWhen: ${v('t')}\nWhere: ${v('wh')}\nWIU student: ${c('w')}\nBackup first: ${c('bu')}\nAgreed no-fix-no-fee terms: ${c('ok')}\n\nContact: 817-614-5220 · tremfjones3@gmail.com`}
 function show(){const s=document.getElementById('sum');s.textContent=msg();s.style.display='block';return msg()}
 function go(k){const m=encodeURIComponent(show());location.href=k==='sms'?'sms:+18176145220?&body='+m:'mailto:tremfjones3@gmail.com?subject='+encodeURIComponent('PC repair booking - '+v('n'))+'&body='+m}
 function pr(){show();window.print()}</script></body></html>
