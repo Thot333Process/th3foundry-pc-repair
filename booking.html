@@ -1,0 +1,41 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Book a Fix · Th3Foundry PC Repair</title><style>
+:root{--pink:#ff2a6d;--cyan:#05d9e8;--gold:#f9c80e;--bg:#0d0221;--panel:#1a0b33}
+*{box-sizing:border-box}body{margin:0;font-family:"Courier New",Consolas,monospace;color:#f0e6ff;background:var(--bg);line-height:1.5}
+a{color:var(--cyan)}
+.hero{position:relative;min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 18px 180px;overflow:hidden;background:linear-gradient(#0d0221 0%,#261447 55%,#5b1260 100%)}
+.stars{position:absolute;inset:0;background-image:radial-gradient(2px 2px at 10% 20%,#fff,transparent),radial-gradient(2px 2px at 30% 8%,#fff,transparent),radial-gradient(2px 2px at 55% 25%,#fff,transparent),radial-gradient(2px 2px at 75% 12%,#fff,transparent),radial-gradient(2px 2px at 90% 30%,#fff,transparent),radial-gradient(2px 2px at 20% 40%,#fff,transparent),radial-gradient(2px 2px at 65% 45%,#fff,transparent)}
+.sun{width:min(300px,62vw);aspect-ratio:1;border-radius:50%;margin-bottom:-40px;background:repeating-linear-gradient(to bottom,var(--gold) 0 14px,var(--pink) 14px 26px,transparent 26px 32px);background-image:linear-gradient(var(--gold),var(--pink));-webkit-mask:repeating-linear-gradient(to bottom,#000 0 60%,transparent 60% 64%,#000 64% 68%,transparent 68% 73%,#000 73% 78%,transparent 78% 84%,#000 84% 88%,transparent 88% 95%,#000 95%);mask:repeating-linear-gradient(to bottom,#000 0 60%,transparent 60% 64%,#000 64% 68%,transparent 68% 73%,#000 73% 78%,transparent 78% 84%,#000 84% 88%,transparent 88% 95%,#000 95%);box-shadow:0 0 80px var(--pink);z-index:1}
+.grid{position:absolute;left:-50%;right:-50%;bottom:0;height:200px;background:repeating-linear-gradient(90deg,var(--pink) 0 2px,transparent 2px 60px),repeating-linear-gradient(0deg,var(--pink) 0 2px,transparent 2px 30px);transform:perspective(220px) rotateX(60deg);transform-origin:bottom;opacity:.75}
+h1{position:relative;z-index:2;font-size:clamp(34px,8vw,76px);margin:0;letter-spacing:4px;color:#fff;text-shadow:4px 4px 0 var(--pink),8px 8px 0 var(--cyan)}
+.tag{position:relative;z-index:2;color:var(--cyan);font-size:clamp(16px,3.5vw,22px);margin:14px 0 22px}
+.btn{font-family:inherit;border:0;cursor:pointer;position:relative;z-index:2;display:inline-block;margin:6px;padding:14px 22px;font-weight:bold;font-size:18px;text-decoration:none;color:var(--bg);background:var(--gold);box-shadow:5px 5px 0 var(--pink)}.btn.alt{background:var(--cyan)}
+section{max-width:1000px;margin:auto;padding:50px 18px}h2{color:var(--gold);letter-spacing:4px;border-bottom:4px solid var(--pink);padding-bottom:6px;font-size:26px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.card{background:var(--panel);border:2px solid var(--cyan);padding:16px;box-shadow:5px 5px 0 var(--pink)}.card h3{margin:0 0 6px;color:var(--cyan)}
+table{width:100%;border-collapse:collapse;background:var(--panel);font-size:16px}th{background:var(--pink);color:var(--bg);text-align:left;padding:10px}td{padding:10px;border-bottom:1px dashed #8c1eff}td:not(:first-child),th:not(:first-child){text-align:right;white-space:nowrap}
+.note{color:#d1f7ff;font-size:14px}.pill{display:inline-block;background:var(--gold);color:var(--bg);padding:2px 8px;font-weight:bold;margin:2px}
+details{background:var(--panel);border-left:4px solid var(--pink);margin:10px 0;padding:12px 16px}summary{cursor:pointer;color:var(--cyan);font-weight:bold}
+.contact{text-align:center;background:linear-gradient(#0d0221,#3a0d4f)}.big{font-size:clamp(30px,7vw,54px);color:#fff;text-shadow:3px 3px 0 var(--pink);text-decoration:none;display:block;margin:10px 0}
+.f{display:grid;gap:10px;max-width:560px;margin:16px auto;text-align:left}.f label{color:var(--cyan);font-size:14px}.f input,.f select,.f textarea{width:100%;padding:10px;background:var(--bg);color:#f0e6ff;border:2px solid var(--cyan);font-family:inherit;font-size:16px}.f textarea{min-height:90px}.row{display:flex;flex-wrap:wrap;gap:8px}footer{text-align:center;padding:24px;color:#9a86c0;font-size:13px}
+@media(max-width:560px){h1{text-shadow:2px 2px 0 var(--pink),4px 4px 0 var(--cyan);line-height:1.2}table{font-size:13px}td,th{padding:7px}}
+
+.wrap{max-width:640px;margin:auto;padding:24px 16px}h1{font-size:clamp(28px,7vw,46px);text-align:center}#sum{display:none;background:var(--panel);border:2px solid var(--gold);padding:16px;white-space:pre-wrap;margin-top:18px}
+@media print{body{background:#fff;color:#000}.f,.noprint,h1{display:none!important}#sum{display:block!important;border:2px solid #000;color:#000;background:#fff;font-size:14pt}}</style></head><body><div class="wrap">
+<h1>BOOK A FIX</h1><p class="tag" style="text-align:center">&gt; Th3Foundry PC Repair · Macomb &amp; WIU · 817-614-5220</p>
+<form class="f" onsubmit="return false">
+<label>Name<input id="n"></label><label>Phone<input id="ph" type="tel"></label><label>Email<input id="em" type="email"></label>
+<label>Service<select id="s"><option>Diagnostic (free for WIU)</option><option>Tune-up / speed-up</option><option>Virus &amp; malware removal</option><option>Windows reinstall + backup</option><option>SSD / RAM upgrade</option><option>Custom PC build</option><option>AI tools setup</option><option>Something else</option></select></label>
+<label>Device type<select id="dt"><option>Laptop</option><option>Desktop</option><option>Gaming PC</option><option>Other</option></select></label>
+<label>Brand / model<input id="d"></label><label>Operating system<input id="os" placeholder="Windows 11, 10, ..."></label>
+<label>What's wrong? When did it start?<textarea id="p"></textarea></label>
+<label>Preferred day/time<input id="t" placeholder="Mon-Fri 5-9 PM, Sat-Sun 10 AM-6 PM"></label>
+<label>Where<select id="wh"><option>Meet on campus / public spot</option><option>House call in Macomb (+$15)</option><option>Drop-off</option></select></label>
+<label><input type="checkbox" id="w" style="width:auto"> WIU student (bring ID)</label>
+<label><input type="checkbox" id="bu" style="width:auto"> Back up my data first (+$15)</label>
+<label><input type="checkbox" id="ok" style="width:auto"> I understand: no fix = no fee (house-call fee still applies)</label>
+<div class="row"><button class="btn" onclick="go('sms')">SEND BY TEXT</button><button class="btn alt" onclick="go('mail')">SEND BY EMAIL</button><button class="btn" style="background:#fff" onclick="pr()">PRINT SUMMARY</button></div></form>
+<div id="sum"></div><p class="note noprint">Nothing is stored online. Sending opens your text or email app with everything filled in.</p></div>
+<script>const v=i=>document.getElementById(i).value,c=i=>document.getElementById(i).checked?'yes':'no';
+function msg(){return `TH3FOUNDRY PC REPAIR - BOOKING REQUEST\nDate: ${new Date().toLocaleString()}\nName: ${v('n')}\nPhone: ${v('ph')}\nEmail: ${v('em')}\nService: ${v('s')}\nDevice: ${v('dt')} - ${v('d')} (${v('os')})\nProblem: ${v('p')}\nWhen: ${v('t')}\nWhere: ${v('wh')}\nWIU student: ${c('w')}\nBackup first: ${c('bu')}\nAgreed no-fix-no-fee terms: ${c('ok')}\n\nContact: 817-614-5220 · tremfjones3@gmail.com`}
+function show(){const s=document.getElementById('sum');s.textContent=msg();s.style.display='block';return msg()}
+function go(k){const m=encodeURIComponent(show());location.href=k==='sms'?'sms:+18176145220?&body='+m:'mailto:tremfjones3@gmail.com?subject='+encodeURIComponent('PC repair booking - '+v('n'))+'&body='+m}
+function pr(){show();window.print()}</script></body></html>
