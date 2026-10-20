@@ -64,5 +64,5 @@ details{background:var(--panel);border-left:4px solid var(--pink);margin:10px 0;
 <div class="row"><button class="btn" onclick="go('sms')">SEND BY TEXT</button><button class="btn alt" onclick="go('mail')">SEND BY EMAIL</button></div></form>
 <script>function msg(){const v=i=>document.getElementById(i)?.value||'';return `Booking request - TheMaktechoForge\nName: ${v('n')}\nContact: ${v('c')}\nService: ${v('s')}\nDevice: ${v('d')}\nWhen: ${v('t')}\nWIU student: ${document.getElementById('w').checked?'yes':'no'}\nProblem: ${v('p')}`}
 function go(k){const m=encodeURIComponent(msg());location.href=k==='sms'?'sms:+18176145220?&body='+m:'mailto:tremfjones3@gmail.com?subject='+encodeURIComponent('PC repair booking')+'&body='+m}</script><p><a class="btn alt" href="booking.html">FULL BOOKING FORM</a></p><p class="note">Nothing is stored online. The form just opens your text or email app with the details filled in.</p></section>
-<footer>© 2026 TheMaktechoForge · Macomb, IL</footer>
+<footer>© 2026 TheMaktechoForge · Macomb, IL · <a href="https://nextdoor.com/page/themaktechoforge-macomb-il/" target="_blank" rel="noopener" style="color:#9a86c0">Find us on Nextdoor</a></footer>
 </body></html>
